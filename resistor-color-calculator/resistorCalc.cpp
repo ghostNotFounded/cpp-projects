@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
         multipliers['P'] = 15;
         multipliers['E'] = 18;
 
-        char c = value_char[sizeof(value_char) / sizeof(char) - 2];
+        char c = value_char[sizeof(value_char) / sizeof(char) - 1];
 
         if (isalpha(c) && multipliers.count(c)) {
             multiplier = multipliers.at(c);
